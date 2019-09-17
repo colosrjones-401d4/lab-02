@@ -3,7 +3,7 @@
 class Vehicle {
   constructor(name, wheels) {
     this.name = name;
-	  this.wheels = wheels;
+    this.wheels = wheels;
   }
 
   drive() {
@@ -16,16 +16,17 @@ class Vehicle {
 }
 class Car extends Vehicle {
   constructor(name) {
-    super(name,4);
+    super(name, 4);
   }
 }
 class Motorcycle extends Vehicle {
-  constructor(name){
-    super(name,2);
+  constructor(name) {
+    super(name, 2);
   }
   wheelie() {
     return 'Wheee..';
   }
 }
 
-module.exports = {Car, Motorcycle};
+module.exports = {
+  Car,Motorcycle};

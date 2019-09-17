@@ -31,6 +31,9 @@ class List {
     return item;
   }
 
+  /**
+   * 
+   */
   shift() {
     if ( ! this.data[0] ) { return undefined; }
     let item = this.data[0];
