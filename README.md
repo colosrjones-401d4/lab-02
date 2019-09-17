@@ -1,42 +1,46 @@
-# lab-02
-LAB: Classes, Inheritance, Functional Programming
-In this lab, you will be doing your first "refactoring", which the process of migrating working code into a new methodology or tech stack. Today, you'll migrate a standard constructor function exported from a node module into a Class, keeping the functionality (and the interface) exactly the same.
+# LAB - 02
 
-Before you begin
-Refer to Getting Started in the lab submission instructions for complete setup, configuration, deployment, and submission instructions.
+## Classes, Inheritance, Functional Programming
 
-Requirements
-Part 1: Vehicles
-Starter Code: starter-code/classes
+### Author: Steven Jones
 
-Implement both Car and Motorcycle using a Javascript Class (in the vehicle-class.js file)
-The tests are pre-configured to run only the constructor variety, but will need to be altered to also test your Classes
-Try and find a way to keep this DRY
-Software Engineering Note! This is the heart of a refactor -- re-implement the same functionality, the same signature, and the same I/O while completely rewriting the underlying implementation
+### Links and Resources
+* [submission PR](http://xyz.com)
+* [travis](http://xyz.com)
+* [back-end](http://xyz.com) (when applicable)
+* [front-end](http://xyz.com) (when applicable)
 
-Part 2: Draw UML and write docs for the List Module
-Starter Code: starter-code/list
+#### Documentation
+* [api docs](http://xyz.com) (API servers)
+* [jsdoc](http://xyz.com) (Server assignments)
+* [styleguide](http://xyz.com) (React assignments)
 
-Part 3: Validator
-Starter Code: starter-code/validator
+### Modules
+#### `modulename.js`
+##### Exported Values and Methods
 
-This is a repeat of Lab 01, but using a class instead of module methods. This is essentially going to be a refactor. You will have a codebase from which to start, with the goal being to keep the functionality the same, while improving the implementation.
+###### `foo(thing) -> string`
+Usage Notes or examples
 
-Write an object validation module that exports a "validate" class that can, based on the inputs, validate whether or not an entity is satisfactory.
+###### `bar(array) -> array`
+Usage Notes or examples
 
-Things we want to be able to validate
+### Setup
+#### `.env` requirements
+* `PORT` - Port Number
+* `MONGODB_URI` - URL to the running mongo instance/db
 
-Is the entity itself the right type (array, object, function etc)
-All all "required" properties present and do they have values?
-For any property that specifies a type, does the value match that type?
-i.e. an array of only numbers
-Question: Do you want to export the class and have to make a new instance after you import it, or do you want to export an instance of that class (we call this a singleton). What are the pros and cons to each choice?
+#### Running the app
+* `npm start`
+* Endpoint: `/foo/bar/`
+  * Returns a JSON object with abc in it.
+* Endpoint: `/bing/zing/`
+  * Returns a JSON object with xyz in it.
+  
+#### Tests
+* How do you run tests?
+* What assertions were made?
+* What assertions need to be / should be made?
 
-Testing
-Validation Module
-
-Test each method for proper/improper use (required params)
-Validate that validation is reliable
-Validate proper error conditions/returns
-Assignment Submission Instructions
-Refer to the the lab submission instructions for the complete lab submission process and expectations
+#### UML
+Link to an image of the UML for your application and response to events

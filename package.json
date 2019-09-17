@@ -6,11 +6,11 @@
   "directories": {
     "doc": "docs"
   },
-	"scripts": {
-		"start": "node index.js",
+  "scripts": {
+    "start": "node index.js",
     "test": "jest --verbose --coverage",
-		"lint": "eslint '**/*.js'",
-		"jsdoc": "jsdoc -c ./doc/config/jsdoc.config.json"
+    "lint": "eslint .",
+    "jsdoc": "jsdoc -c ./doc/config/jsdoc.config.json"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,11 @@
   "bugs": {
     "url": "https://github.com/colosrjones-401d4/lab-02/issues"
   },
-  "homepage": "https://github.com/colosrjones-401d4/lab-02#readme"
+  "homepage": "https://github.com/colosrjones-401d4/lab-02#readme",
+  "dependencies": {
+    "eslint": "^6.4.0",
+    "faker": "^4.1.0",
+    "jest": "^24.9.0",
+    "lint": "^0.7.0"
+  }
 }

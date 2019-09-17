@@ -3,17 +3,6 @@
 let validator = {};
 
 /**
- * Based on a set of rules, is the input valid?
- * TODO: Define the rules ... how do we send them in? How do we identify?
- * @param input
- * @param rules
- * @returns {boolean}
- */
-validator.isValid = (input, rules) => {
-  return true;
-};
-
-/**
  * Is this a string?
  * @param input
  * @returns {boolean}
@@ -70,12 +59,12 @@ validator.isValid = (schema,data) => {
       ? validator.isTruthy(data[fieldName])
       : true;
 
-      // Am I the right type (if we even care)
+    // Am I the right type (if we even care)
     let type = field.type
       ? validator.isCorrectType(data[fieldName], field)
       : true;
 
-      // If anything is false ...
+    // If anything is false ...
     if (!(required && type)) {
       valid = false;
     }
