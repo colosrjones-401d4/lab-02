@@ -6,8 +6,11 @@
   "directories": {
     "doc": "docs"
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"scripts": {
+		"start": "node index.js",
+    "test": "jest --verbose --coverage",
+		"lint": "eslint '**/*.js'",
+		"jsdoc": "jsdoc -c ./doc/config/jsdoc.config.json"
   },
   "repository": {
     "type": "git",
