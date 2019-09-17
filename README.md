@@ -5,8 +5,8 @@
 ### Author: Steven Jones
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
-* [travis](http://xyz.com)
+* [submission PR](https://github.com/colosrjones-401d4/lab-02/tree/class)
+* [travis](https://travis-ci.org/colosrjones-401d4/lab-02)
 * [back-end](http://xyz.com) (when applicable)
 * [front-end](http://xyz.com) (when applicable)
 
@@ -16,7 +16,9 @@
 * [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
-#### `modulename.js`
+#### `vehicle-class.js`
+#### `list.js`
+#### `validator.js`
 ##### Exported Values and Methods
 
 ###### `foo(thing) -> string`
