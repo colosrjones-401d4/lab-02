@@ -6,6 +6,9 @@ class List {
     this.data = {};
   }
 
+    /**
+ * Sorts the List in ascending ASCII order and updates the list length 
+ */
   reindex() {
     let data = Object.keys(this.data).sort().reduce((acc,val,idx) => {
       acc[idx] = this.data[val];
@@ -16,6 +19,11 @@ class List {
     this.data = data;
   }
 
+  /**
+ * Adds/pushes a given item into the list
+ * @param {string} Item to be added to List
+ * @returns {number} Length of list after adding item
+ */
   push(item) {
     if ( arguments.length === 1 ) {
       this.data[this.length++] = item;
@@ -23,6 +31,10 @@ class List {
     return this.length;
   }
 
+  /**
+ * Deletes/pops the last item from the list
+ * @returns {undefined} 
+ */
   pop() {
     if ( ! this.length ) { return undefined; }
     let item = this.data[this.length - 1];
@@ -32,8 +44,9 @@ class List {
   }
 
   /**
-   * 
-   */
+ * Deletes the first item from the list
+ * @returns {string} First item that was in the list
+ */
   shift() {
     if ( ! this.data[0] ) { return undefined; }
     let item = this.data[0];
@@ -42,12 +55,21 @@ class List {
     return item;
   }
 
+  /**
+ * Adds the given item to the beginning of the list
+ * @param {string} 
+ * @returns {undefined} 
+ */
   unshift(item) {
     this.data[-1] = item;
     this.reindex();
     return this.length;
   }
 
+  /**
+ * Runs the given callback function on each item in the list. Modifies the original list in place.
+ * @param {callback} 
+ */
   forEach(callback) {
     if ( this.length ) {
       for (let i = 0; i <= this.length - 1; i++) {
@@ -56,6 +78,11 @@ class List {
     }
   }
 
+  /**
+ * Runs the given callback function on each item in the list. Creates a new list to return but does not modify the existing list.
+ * @param {function} Callback
+ * @returns {object} New List that has been mapped through
+ */
   map(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -65,6 +92,12 @@ class List {
     return result;
   }
 
+  /**
+ * Filters the list using the given callback function. If the callback function returns true for an item then it pushes the item into a new List. 
+ * And then the new filtered list is returned.
+ * @param {function} Callback function
+ * @returns {object} New List that has been mapped through
+ */
   filter(callback) {
     if ( ! this.length ) { return undefined; }
     let result = new List();
@@ -76,6 +109,12 @@ class List {
     return result;
   }
 
+  /**
+ * Runs the given callback function on each item in the list to return a single value.
+ * @param {function} Callback function
+ * @param {state} Initial Value
+ * @returns {state} 
+ */
   reduce(callback, state) {
     if ( ! this.length ) { return undefined; }
     for (let i = 0; i <= this.length - 1; i++) {
