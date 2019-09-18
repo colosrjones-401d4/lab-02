@@ -7,8 +7,7 @@
 ### Links and Resources
 * [submission PR](https://github.com/colosrjones-401d4/lab-02/tree/class)
 * [travis](https://travis-ci.org/colosrjones-401d4/lab-02)
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+
 
 #### Documentation
 * [api docs](http://xyz.com) (API servers)
@@ -41,8 +40,13 @@ Usage Notes or examples
   
 #### Tests
 * How do you run tests?
+list.test.js
+validator.test.js
+vehicle.test.js
+
 * What assertions were made?
 * What assertions need to be / should be made?
 
 #### UML
 Link to an image of the UML for your application and response to events
+![UML Diagram](LIST.png)
